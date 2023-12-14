@@ -43,6 +43,11 @@ text = "Unit Concepts"
 layout_mode = 2
 text = "Transferable Skills"
 
+[node name="Sources" type="Button" parent="CanvasLayer/Menu/Control/VBoxContainer"]
+layout_mode = 2
+text = "Sources"
+
 [connection signal="pressed" from="CanvasLayer/Menu/Control/VBoxContainer/Orientations" to="CanvasLayer/Menu/Control" method="_on_orientations_pressed"]
 [connection signal="pressed" from="CanvasLayer/Menu/Control/VBoxContainer/Unit Concepts" to="CanvasLayer/Menu/Control" method="_on_unit_concepts_pressed"]
 [connection signal="pressed" from="CanvasLayer/Menu/Control/VBoxContainer/Transferable Skills" to="CanvasLayer/Menu/Control" method="_on_transferable_skills_pressed"]
+[connection signal="pressed" from="CanvasLayer/Menu/Control/VBoxContainer/Sources" to="CanvasLayer/Menu/Control" method="_on_sources_pressed"]

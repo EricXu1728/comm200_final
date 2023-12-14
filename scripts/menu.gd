@@ -23,3 +23,10 @@ func _on_unit_concepts_pressed():
 func _on_transferable_skills_pressed():
 	get_tree().change_scene_to_file("res://tscns/TransferableSkills.tscn")
 	pass # Replace with function body.
+
+
+
+
+func _on_sources_pressed():
+	get_tree().change_scene_to_file("res://tscns/Sources.tscn")
+	pass # Replace with function body.

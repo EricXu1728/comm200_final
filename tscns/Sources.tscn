@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://qlgk35fgr2qj"]
+
+[ext_resource type="Script" path="res://scripts/CanvasLayer.gd" id="1_ue3pg"]
+[ext_resource type="Script" path="res://scripts/Sources.gd" id="2_10sbq"]
+
+[node name="Sources" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("1_ue3pg")
+
+[node name="Sources" type="RichTextLabel" parent="CanvasLayer"]
+offset_left = 123.0
+offset_top = 85.0
+offset_right = 1135.0
+offset_bottom = 506.0
+text = "Calhoun, C. (Ed.). (1992). Habermas and the public sphere. Cambridge, MA: MIT Press.
+
+Gjoni, Eron. “Thezoepost.” Thezoepost, 12 Sept. 2014, thezoepost.wordpress.com/.
+Murphy, John M., and Michael Lechuga. \"The Role of the Critic.\" Rhetoric and Public Affairs 24.1-2 (2021): 51-68.
+
+old-red-paint. \"What does gamergate mean to you?.\" Reddit, 17 June. 2023, https://www.reddit.com/r/KotakuInAction/comments/14c3e0v/what_does_gamergate_mean_to_you/.
+
+Rumbleskim. \"[Video Games] GamerGate - The controversy that forever changed the gaming community, destroyed dozens of lives, and gave birth to the modern Alt-Right.\" Reddit, 6 Dec. 2021, https://www.reddit.com/r/HobbyDrama/comments/ra7s7y/video_games_gamergate_the_controversy_that/.
+
+Stuart, Keith. “Zoe Quinn: 'All Gamergate has done is ruin people's lives'.” The Guardian, 3 Dec. 2014, https://www.theguardian.com/technology/2014/dec/03/zoe-quinn-gamergate-interview.
+"
+script = ExtResource("2_10sbq")
+
+[node name="Sources2" type="RichTextLabel" parent="CanvasLayer"]
+offset_left = 491.0
+offset_top = 532.0
+offset_right = 1503.0
+offset_bottom = 953.0
+scale = Vector2(3, 3)
+text = "The end"
+tab_size = 7
