@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bmtifif8gf48m"]
 
-[ext_resource type="Script" path="res://CanvasLayer.gd" id="1_ndrle"]
+[ext_resource type="Script" path="res://scripts/CanvasLayer.gd" id="1_ndrle"]
 [ext_resource type="Resource" uid="uid://dwwe5oc7mce8y" path="res://text/unit_concepts_text.tres" id="3_8rmd6"]
 [ext_resource type="PackedScene" uid="uid://b3io0wumxynjl" path="res://tscns/controller.tscn" id="3_y7be3"]
 [ext_resource type="Texture2D" uid="uid://ej76lvd2mjc1" path="res://images/icon.svg" id="4_6t1o6"]

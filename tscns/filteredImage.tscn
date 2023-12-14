@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dhmr1mflnpnn8"]
 
-[ext_resource type="Script" path="res://filteredImage.gd" id="1_75y5j"]
-[ext_resource type="Shader" path="res://colorReduce.gdshader" id="2_n3teh"]
+[ext_resource type="Script" path="res://scripts/filteredImage.gd" id="1_75y5j"]
+[ext_resource type="Shader" path="res://scripts/colorReduce.gdshader" id="2_n3teh"]
 [ext_resource type="Texture2D" uid="uid://d4n0yqp3u86bj" path="res://images/s200_michael.lechuga.jpg" id="3_k5q8m"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_i5dq4"]
