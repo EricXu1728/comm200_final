@@ -5,7 +5,7 @@ extends Resource
 	"*",
 	#"The role of a critic is to analyze and critique text.", 
 	"",
-	"Okay thats a bit broad, so lets break it down",
+	"Okay thats a bit broad, so lets break it down.",
 	"*",
 	"What is a text?",
 	"Text can obviously be things like papers or speeches. It's reasonable to assume that adding things on top can be called texts for the purpose of criticism.",

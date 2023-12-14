@@ -1,13 +1,13 @@
 extends Resource
 
 
-@export var textList := ["For the Unit Concepts, I will be analyising GamerGate",
+@export var textList := ["For the Unit Concepts, I will be analyzing GamerGate",
 	"*",
-	"To set the scene there are roughly 3 circles of people that are important. Feminist groups, anti social justice groups, and the average gaming space.",
+	"To set the scene there are roughly 3 circles of people that are important. Feminist groups, anti-social justice groups, and the average gaming space.",
 	"*",
-	"At the time feminist and social justice ideology largely stuck to platforms such as tumblr or twitter. These groups were not yet largely execpted into the public gaming space",
+	"At the time feminist and social justice ideology largely stuck to platforms such as tumblr or twitter. These groups were not yet largely accepted into the public gaming space.",
 	"*",
-	"Anti-Social justice groups largely stuck to online platforms such as 4chan, Reddit, and most importantly Youtube",
+	"Anti-Social justice groups largely stuck to online platforms such as 4chan, Reddit, and most importantly Youtube.",
 	"*",
 	"The youtube space is also where most general audiences stayed",
 	"GamerGate sort of started in 2013. I say sort of because there is a lot of conflicting information.",
@@ -15,14 +15,14 @@ extends Resource
 	"*",
 	"Some people trace this back to Anita Sarkeesian, a youtuber who started in 2009 and did feminist analysis of games. She was a figurehead of the feminist movement for games and her message did start to affect how some games were made.",
 	"*",
-	"Her overall goal was spreading the idea that games have sexist themes that sould be resolved",
+	"Her overall goal was spreading the idea that games have sexist themes that should be resolved.",
 	#Games have sexist themes
 	"Unfortunately being the figurehead of a movement led to harassment including the sexual harassment, leaking of personal information, identification, and bomb threats.",
 	# “games are sexist” -> “gamers are sexist”
 	"*",
 	"This hate was in part of her message being represented in different rhetorical ecologies. This message made sense to people and groups already accepting of groups, but as the message moved from space to space it shifted.",
 	#Remember this theme of passing around ideas through different spaces and rhetorical ecologies for later
-	"(This game of telephone becomes a common pattern later on)",
+	"(This game of telephone becomes a common pattern later on.)",
 	"*",
 	"While these may contain some element of truth to them, it is more common knowledge that the movement only really started to officially start in August 2014 when Zoe Quinn, the creator of “Depression Quest” a text based game, was accused of manipulating reviews.",
 	#show image
@@ -33,23 +33,24 @@ extends Resource
 	"This was despite Nathan Grayson not mentioning Zoe’s games in his work at all.",
 	
 	"But this reveal didn’t solve anything. Kotaku was an already controversial news site for being one of few openly left leaning gaming platforms/spaces.",
-	"As the GamerGate was already against a group they disliked, Anti social justice groups quickly jumped on the movement.",
-	"Anti-social justice groups were able to slide their distaste for left-leaning work into the public sphere through the public movement, and the movement shifted.",
-	
+	"As the GamerGate was already against a group they disliked, Anti-social justice groups quickly jumped on the movement.",
+	"Anti-social justice groups were able to slide their distaste for left-leaning work into the public sphere through the public movement.",
+	"Suddenly, this sphere and the public sphere had a much larger shared space and discussion because of this movement, resulting in a change in the movement itself and the public sphere",
 	"*",
-	"The public movement which started as drama between a couple, spread and became about journalism. Once GamerGate started, the anti movement shifted its goal to also rally against social justice.",
-	"As the GamerGate movement was adopted and passed around these spaces, the movement shifted its purpose",
+	"The public movement which started as a drama between a couple, spread and became about journalism. Once GamerGate started, the anti-social justice groups shifted the movement’s goal to also rally against social justice.",
+	"As the GamerGate movement was adopted and passed around these spaces, the movement shifted its purpose.",
 	#“Story about a popular and controversial figure cheating” -> “Journalists are corrupt” -> “Wokeness bad.” 
-	"Intentionaly or unintentionaly GamerGate became an inlet for people to join the alt right movement.",
+	"Intentionally or unintentionally GamerGate became an inlet for people to join the alt right movement.",
 
 	"*",
 	"As mentioned earlier, the anti-social justice circle was more closely connected to the general public, unlike the feminist circle.",
 	"As such, general audiences would mostly hear of feminist ideology from the anti-sj group",
-	"Ideas that made sense in feminist spaces with the right rhetorical ecology where viewed as something repeling when brought to the general public space through what the anti-social justice groups gave them",
+	"Ideas that made sense in feminist spaces with the right rhetorical ecology were viewed as something rappelling when brought to the general public space through what the anti-social justice groups gave them.",
 	"Because a good chunk of the population heard feminist ideas through the lens/ecology of those against it, it encouraged them to stand against social justice.",
-	"As such gamer gate is an excellent example of how ideas and movements are effected as they pass through different spaces and ecologies",
+	"As such gamer gate is an excellent example of how ideas and movements are affected as they pass through different spaces and ecologies",
 	#“Gamergate is sexist” -> “they hate people who are trying to question them”
 	""
+
 ]
 
 var index = 0
