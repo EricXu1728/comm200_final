@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckkvkbcil1mnq"]
+
+[ext_resource type="Script" path="res://scripts/CanvasLayer.gd" id="1_ywkwi"]
+[ext_resource type="Script" path="res://scripts/tabel.gd" id="2_l4mhp"]
+
+[node name="TransferableSkills" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("1_ywkwi")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer"]
+offset_left = 26.0
+offset_top = 10.0
+offset_right = 1125.0
+offset_bottom = 613.0
+script = ExtResource("2_l4mhp")
