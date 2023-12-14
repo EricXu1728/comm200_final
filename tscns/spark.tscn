@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4b546swrr1y8"]
+
+[ext_resource type="Script" path="res://scripts/spark.gd" id="1_c44l2"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_tb0td"]
+particle_flag_disable_z = true
+spread = 180.0
+initial_velocity_min = 201.01
+initial_velocity_max = 262.81
+gravity = Vector3(0, 500, 0)
+
+[node name="spark" type="Node2D"]
+script = ExtResource("1_c44l2")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+emitting = false
+amount = 30
+process_material = SubResource("ParticleProcessMaterial_tb0td")
+one_shot = true
+explosiveness = 1.0
+
+[connection signal="finished" from="GPUParticles2D" to="." method="_on_gpu_particles_2d_finished"]

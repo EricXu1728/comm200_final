@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://b5ewuf3g12nwk"]
+[gd_scene load_steps=6 format=3 uid="uid://b5ewuf3g12nwk"]
 
 [ext_resource type="Script" path="res://scripts/CanvasLayer.gd" id="1_m73bk"]
 [ext_resource type="Script" path="res://scripts/menu.gd" id="3_pdhgd"]
 [ext_resource type="Texture2D" uid="uid://ej76lvd2mjc1" path="res://images/icon.svg" id="4_0cinl"]
+[ext_resource type="Resource" uid="uid://brf1w8yx0tt7n" path="res://text/unlocks.tres" id="4_2fp2n"]
+[ext_resource type="Texture2D" uid="uid://dp006f5x1xese" path="res://images/lock.png" id="5_ixfyq"]
 
 [node name="Main" type="Node2D"]
 
@@ -21,6 +23,7 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("3_pdhgd")
+unlocks = ExtResource("4_2fp2n")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Menu/Control"]
 layout_mode = 0
@@ -47,7 +50,34 @@ text = "Transferable Skills"
 layout_mode = 2
 text = "Sources"
 
+[node name="Label" type="Label" parent="CanvasLayer/Menu/Control"]
+layout_mode = 0
+offset_left = 570.0
+offset_top = 451.0
+offset_right = 884.0
+offset_bottom = 540.0
+scale = Vector2(4, 4)
+
+[node name="BlueLock" type="Sprite2D" parent="CanvasLayer/Menu/Control"]
+texture_filter = 1
+position = Vector2(428, 226)
+scale = Vector2(8, 8)
+texture = ExtResource("5_ixfyq")
+hframes = 2
+
+[node name="RedLock" type="Sprite2D" parent="CanvasLayer/Menu/Control"]
+texture_filter = 1
+position = Vector2(445, 385)
+scale = Vector2(8, 8)
+texture = ExtResource("5_ixfyq")
+hframes = 2
+frame = 1
+
+[node name="Timer" type="Timer" parent="CanvasLayer/Menu/Control"]
+wait_time = 0.6
+
 [connection signal="pressed" from="CanvasLayer/Menu/Control/VBoxContainer/Orientations" to="CanvasLayer/Menu/Control" method="_on_orientations_pressed"]
 [connection signal="pressed" from="CanvasLayer/Menu/Control/VBoxContainer/Unit Concepts" to="CanvasLayer/Menu/Control" method="_on_unit_concepts_pressed"]
 [connection signal="pressed" from="CanvasLayer/Menu/Control/VBoxContainer/Transferable Skills" to="CanvasLayer/Menu/Control" method="_on_transferable_skills_pressed"]
 [connection signal="pressed" from="CanvasLayer/Menu/Control/VBoxContainer/Sources" to="CanvasLayer/Menu/Control" method="_on_sources_pressed"]
+[connection signal="timeout" from="CanvasLayer/Menu/Control/Timer" to="CanvasLayer/Menu/Control" method="_on_timer_timeout"]

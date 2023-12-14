@@ -1,6 +1,6 @@
 extends Resource
 
-
+@export var unlocks : Resource
 @export var textList := ["For the Unit Concepts, I will be analyzing GamerGate",
 	"*",
 	"To set the scene there are roughly 3 circles of people that are important. Feminist groups, anti-social justice groups, and the average gaming space.",
@@ -48,6 +48,8 @@ extends Resource
 	"Ideas that made sense in feminist spaces with the right rhetorical ecology were viewed as something rappelling when brought to the general public space through what the anti-social justice groups gave them.",
 	"Because a good chunk of the population heard feminist ideas through the lens/ecology of those against it, it encouraged them to stand against social justice.",
 	"As such gamer gate is an excellent example of how ideas and movements are affected as they pass through different spaces and ecologies",
+	"*",
+	"You got the RED KEY",
 	#“Gamergate is sexist” -> “they hate people who are trying to question them”
 	""
 
@@ -59,10 +61,13 @@ var unit2D : Sprite2D
 
 var picTscn :=load("res://tscns/filteredImage.tscn")
 var picture =picTscn.instantiate()
-var anita := load("res://4513.webp")
+var anita := load("res://images/4513.webp")
 var zoe := load("res://images/zoe.PNG")
 
 var new_label : Label
+
+var key := load("res://images/keys.png")
+
 
 func event(caller : Node2D):
 	print("index ", index)
@@ -115,5 +120,14 @@ func event(caller : Node2D):
 		caller.add_child(unit2D)
 		new_label.text =""
 		print("last")
+	elif(index == 10):
+		unit2D.set_texture(key)
+		unit2D.set_hframes(2)
+		unit2D.scale.x = 20
+		unit2D.scale.y = 20
+		unit2D.texture_filter = 1
+		unit2D.frame = 1
+		unlocks.red_key = true
+		
 	index +=1
 	pass

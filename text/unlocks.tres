@@ -1,0 +1,7 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://brf1w8yx0tt7n"]
+
+[ext_resource type="Script" path="res://text/unlocks.gd" id="1_wyhcc"]
+
+[resource]
+script = ExtResource("1_wyhcc")
+has_key = true

@@ -1,5 +1,7 @@
 extends Resource
 
+@export var unlocks : Resource
+
 @export var textList := [ #Orientation
 	"What is the role of a critic?",
 	"*",
@@ -41,6 +43,8 @@ extends Resource
 Text can be of any sort but texts that are more important to analyze are those that represent the common narratives of publics.
 When critiquing it is important to understand and incorporate the context.
 ",
+"*",
+"You got the BLUE KEY",
 ""
 ]
 
@@ -49,6 +53,8 @@ var strip_sprite : Sprite2D
 var OrientationText : Sprite2D
 var picTscn :=load("res://tscns/filteredImage.tscn")
 var picture =picTscn.instantiate()
+
+var key := load("res://images/keys.png")
 
 var murphy := load("res://download.png")
 var cool := preload("res://images/Sprite1_strip4.png")
@@ -88,7 +94,15 @@ func event(caller : Node2D):
 	elif(index ==8):
 		caller.remove_child(picture)
 		strip_sprite.frame = 0
-		
+	elif(index == 9):
+		print("key")
+		strip_sprite.set_texture(key)
+		strip_sprite.set_hframes(2)
+		strip_sprite.scale.x = 20
+		strip_sprite.scale.y = 20
+		strip_sprite.position.y += 100
+		unlocks.blue_key = true
+		strip_sprite.texture_filter = 1
 	
 	index +=1
 	pass
