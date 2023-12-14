@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://cfshpkbeu0hay"]
+
+[ext_resource type="Script" path="res://CanvasLayer.gd" id="1_53qyu"]
+[ext_resource type="PackedScene" uid="uid://b3io0wumxynjl" path="res://tscns/controller.tscn" id="3_0mxjl"]
+[ext_resource type="Resource" uid="uid://dryjrymxmkqlc" path="res://text/orienetation_text.tres" id="3_qtdcf"]
+[ext_resource type="Texture2D" uid="uid://ej76lvd2mjc1" path="res://images/icon.svg" id="4_llg5t"]
+
+[node name="Orientation" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("1_53qyu")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(995, 517)
+texture = ExtResource("4_llg5t")
+
+[node name="Controller" parent="CanvasLayer" instance=ExtResource("3_0mxjl")]
+position = Vector2(86, 428)
+text = ExtResource("3_qtdcf")

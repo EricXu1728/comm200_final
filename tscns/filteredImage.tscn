@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://dhmr1mflnpnn8"]
+
+[ext_resource type="Script" path="res://filteredImage.gd" id="1_75y5j"]
+[ext_resource type="Shader" path="res://colorReduce.gdshader" id="2_n3teh"]
+[ext_resource type="Texture2D" uid="uid://d4n0yqp3u86bj" path="res://images/s200_michael.lechuga.jpg" id="3_k5q8m"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_i5dq4"]
+shader = ExtResource("2_n3teh")
+shader_parameter/colors = 4.033
+shader_parameter/dither = null
+shader_parameter/amount = 100
+
+[node name="FilteredImage" type="Node2D"]
+script = ExtResource("1_75y5j")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_i5dq4")
+texture = ExtResource("3_k5q8m")

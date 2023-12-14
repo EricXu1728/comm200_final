@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://bmtifif8gf48m"]
+
+[ext_resource type="Script" path="res://CanvasLayer.gd" id="1_ndrle"]
+[ext_resource type="Resource" uid="uid://dwwe5oc7mce8y" path="res://text/unit_concepts_text.tres" id="3_8rmd6"]
+[ext_resource type="PackedScene" uid="uid://b3io0wumxynjl" path="res://tscns/controller.tscn" id="3_y7be3"]
+[ext_resource type="Texture2D" uid="uid://ej76lvd2mjc1" path="res://images/icon.svg" id="4_6t1o6"]
+
+[node name="UnitConcepts" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("1_ndrle")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(984, 476)
+texture = ExtResource("4_6t1o6")
+
+[node name="Controller" parent="CanvasLayer" instance=ExtResource("3_y7be3")]
+position = Vector2(58, 406)
+text = ExtResource("3_8rmd6")
