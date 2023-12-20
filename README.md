@@ -11,7 +11,7 @@ I recomend downloading directly the exe and pck using this:
 You will need both to open the game.
 
 You can view without downloading here:
-![video](https://github.com/EricXu1728/comm200_final/assets/73031279/4b6367c8-192c-4772-80a3-faf22b182881)
+[video](https://github.com/EricXu1728/comm200_final/assets/73031279/4b6367c8-192c-4772-80a3-faf22b182881)
 
 
 
